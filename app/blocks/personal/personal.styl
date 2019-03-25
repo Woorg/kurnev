@@ -1,0 +1,48 @@
+.personal
+	font-family $pS
+	&__in
+		padding-top 100px
+		padding-bottom 100px
+	&__title
+		color #000000
+		font-size 40px
+		font-weight 700
+		line-height 1
+	&__subtitle
+		color #9b9b9b
+		font-size 16px
+		font-weight 400
+		letter-spacing 0.24px
+		line-height 1.125
+	&__content
+		display flex
+		justify-content space-between
+	&__text
+		padding-top 66px
+		max-width 264px
+		color #000000
+		font-size 16px
+		font-weight 400
+		p
+			margin-bottom 40px
+			line-height 1.125
+			&:last-child
+				margin-bottom 0
+
+	&__image
+		position relative
+		max-width 938px
+		padding-left 69px
+		img
+			max-width 100%
+			height auto
+	&__image-caption
+		position absolute
+		top 50%
+		left -140px
+		color #307ef2
+		font-size 18px
+		font-weight 400
+		letter-spacing 0.54px
+		transform translateY(-50%) rotate(270deg)
+

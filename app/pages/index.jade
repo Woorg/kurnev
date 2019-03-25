@@ -1,0 +1,27 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/hero/hero
+include /blocks/services/services
+include /blocks/education/education
+include /blocks/personal/personal
+include /blocks/feedback/feedback
+include /blocks/text/text
+
+
+
+include /blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Юридические услуги Курнев А.Е.';
+
+block content
+	+header()
+	+hero()
+	+services()
+	+education()
+	+personal()
+	+feedback()
+	+text()
+	+footer()

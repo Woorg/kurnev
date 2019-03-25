@@ -1,0 +1,30 @@
+include ../icon/icon
+
+
+mixin education()
+	section.education&attributes(attributes)
+		.education__in.container
+			.education__top
+				h2.education__title Образование
+				.education__text Два высших юридических образования. Магистр публичного права. Референт государственной гражданской службы Российской Федерации 3го класса.
+			ul.education__list
+				li.education__item
+					a.education__link(href="assets/images/content/education-1.png")
+						.education__item-title Первое высшее юридическое образование - бакалавр.
+							+icon('education-icon', true).education__item-icon
+						figure.education__image
+							img(src="assets/images/content/education-1.png", alt="")
+							figcaption.education__image-caption АНО ВО «Российский Новый Университет»
+				li.education__item
+					a.education__link(href="assets/images/content/education-2.png")
+						.education__item-title Второе высшее юридическое образование - магистр.
+							+icon('education-icon', true).education__item-icon
+						figure.education__image
+							img(src="assets/images/content/education-2.png", alt="")
+							figcaption.education__image-caption ЧОУВО "Московский Университет им. С.Ю. Витте"
+				li.education__item
+					a.education__link(href="assets/images/content/education-3.png")
+						.education__item-title Повышение квалификации.
+						figure.education__image
+							img(src="assets/images/content/education-3.png", alt="")
+							figcaption.education__image-caption Центр обучения  ООО "ИК Ю-Софт"

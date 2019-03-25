@@ -1,0 +1,8 @@
+include ../form/form
+
+mixin feedback()
+	section.feedback&attributes(attributes)
+
+		.feedback__in.container
+			h2.feedback__title Обратная связь
+			+form().feedback__form

@@ -1,0 +1,21 @@
+include ../success-cases/success-cases
+
+mixin hero()
+	section.hero&attributes(attributes)
+		.hero__in.container
+			.hero__content
+				.hero__subtitle
+					ul.hero__subtitle-list
+						li.hero__subtitle-item Консультации
+						li.hero__subtitle-item Представительство в суде
+						li.hero__subtitle-item Составление исков
+						li.hero__subtitle-item Составление договоров
+
+				h1.hero__title Юридические услуги
+				.hero__text
+					p Защищаю интересы клиента с помощью документов, консультаций и переговоров. Экономлю клиенту деньги, время и нервы.
+
+				a.hero__button.button(href="#") Оставить заявку
+
+
+			+success-cases()

@@ -1,0 +1,127 @@
+.form
+	form
+		display flex
+		justify-content flex-start
+		flex-flow row wrap
+		font-family $pS
+	&__col
+		margin-right 50px
+		max-width 548px
+		width 100%
+		&:last-child
+			margin-right 0
+	&__row_bottom
+		padding-top 80px
+		width 100%
+		display flex
+		justify-content flex-start
+		align-items flex-end
+		flex-flow row wrap
+
+	&__field
+		position relative
+		border-bottom 1px solid #161616
+		overflow hidden
+	// &__field_file
+	&__label
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		z-index 1
+		padding-bottom 26px
+		padding-top 26px
+		display block
+		color #9b9b9b
+		font-size 16px
+		font-weight 400
+		letter-spacing 0.8px
+		// line-height 58px
+		transform-origin left
+		text-transform uppercase
+		cursor pointer
+		transform scale(1)
+		tr(transform .3s ease)
+	&__input,
+	&__textarea,
+	&__file
+		border none
+		// border-bottom 1px solid #161616
+		padding-bottom 22px
+		padding-top 24px
+		width 100%
+		background-color #ebebe8
+		font-size 16px
+		&:focus ~ label,
+		&:valid ~ label
+			top 0
+			transform scale(.8) translateY(-30px)
+			tr(transform .3s ease)
+	&__textarea
+		min-height 200px
+		&:focus ~ label,
+		&:valid ~ label
+			top 0
+			transform scale(.8) translateY(-50px)
+			tr(transform .3s ease)
+	&__file
+		border-bottom none
+		margin-left -100px
+		appearance none
+		text-indent -9999px
+		text-align left
+		cursor pointer
+		placeholder()
+			color #9b9b9b
+			font-size 16px
+			font-weight 400
+			letter-spacing 0.8px
+		~ label
+			top 0
+			padding-bottom 22px
+			height 98%
+			text-indent 30px
+			background #ebebe8
+			tr(transform .3s ease)
+
+		&:focus ~ label,
+		&:valid ~ label
+			transform scale(1) translateY(0px)
+
+
+	&__label-icon
+		position absolute
+		z-index 1
+		top 50%
+		left 0
+		width 17px
+		height 20px
+		fill #9b9b9b
+		transform translateY(-50%)
+
+
+	&__privacy
+		position relative
+		padding-left 60px
+		color #4285f4
+		font-size 16px
+		font-weight 400
+		letter-spacing 0.8px
+		line-height 1
+		text-transform uppercase
+		text-decoration none
+		&:after
+			position absolute
+			bottom 2px
+			left 0
+			content ''
+			width 44px
+			height 1px
+			background #4285f4
+
+	&__submit
+		color #f1f0ec
+		font-size 18px
+		font-weight 400
+		letter-spacing 0.9px

@@ -1,0 +1,126 @@
+.services
+	color #000000
+	font-family $pS
+	&__in
+		display flex
+		justify-content flex-start
+	&__col
+		width 918px
+	&__col_narrow
+		width 438px
+		border 1px solid #E0E0DD
+		border-width 0 0 0 1px
+		.services__top
+			border 1px solid #E0E0DD
+			border-width 0 0 1px 0
+		.services__title
+			padding-left 64px
+			padding-bottom 45px
+		.services__list
+			padding-top 0
+		.services__item
+			margin-right 0
+			margin-bottom 0
+			padding-top 30px
+			padding-left 42px
+			padding-bottom 30px
+			padding-right 42px
+			width auto
+			&:hover
+				background-color #4285f4
+				.services__item-title
+					color #fff
+		.services__item-title
+			margin-bottom 0
+			color #161617
+			font-size 24px
+			font-weight 400
+			line-height 1.25
+
+	&__top
+		border 1px solid #E0E0DD
+		border-width 0 0 1px 0
+		min-height 88px
+	&__title
+		padding-bottom 24px
+		text-align left
+		font-size 40px
+		font-weight 700
+		span
+			display block
+			color #9b9b9b
+			font-size 16px
+			font-weight 400
+			line-height 1.4375
+	&__list
+		margin-right -22px
+		padding-top 37px
+		display flex
+		justify-content flex-start
+		flex-flow row wrap
+	&__item
+		position relative
+		margin-right 16px
+		width 292px
+		margin-bottom 60px
+
+		&:hover
+			.services__item-title
+				color #4285f4
+				tr(color .3s ease)
+			.services__more
+				color #4285f4
+				tr(color .3s ease)
+				&:after
+					opacity 1
+					tr(opacity .3s ease)
+
+	&__link
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+	&__item-title
+		margin-bottom 11px
+		color #161617
+		font-size 30px
+		font-weight 700
+		tr(color .3s ease)
+	&__item-text
+		margin-bottom 12px
+		color #161617
+		font-size 18px
+		font-weight 400
+		letter-spacing 0.27px
+		line-height 1.277
+
+	&__item-badge
+		color #e64949
+		font-family $pM
+		font-size 19px
+		font-weight 700
+		line-height 1.473
+
+	&__more
+		position relative
+		padding-right 20px
+		display inline-block
+		color #7c7c7c
+		font-size 16px
+		font-weight 400
+		letter-spacing 0.24px
+		tr(color .3s ease)
+		&:after
+			position absolute
+			top 50%
+			right 0
+			content ">"
+			color #307ef2
+			opacity 0
+			font-family $pM
+			font-size 17px
+			font-weight 400
+			letter-spacing 0.26px
+			transform translateY(-50%)
+			tr(opacity .3s ease)

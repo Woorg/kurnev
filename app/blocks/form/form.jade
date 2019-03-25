@@ -1,0 +1,36 @@
+include ../icon/icon
+
+mixin form()
+	.form&attributes(attributes)
+		form(action="" method='post')
+			.form__col
+				.form__field
+					input#subject.form__input(type="text", value=""  required)
+					label.form__label(for="subject") тема письма
+
+				.form__field
+					input#name.form__input(type="text", value="" required)
+					label.form__label(for="name") ваше имя
+
+				.form__field
+					input#phone.form__input(type="text", value="" required)
+					label.form__label(for="phone") контактный телефон
+
+				.form__field
+					input#email.form__input(type="text", value="" required)
+					label.form__label(for="email") e-mail
+
+			.form__col
+				.form__field
+					textarea#message.form__textarea(type="text", value="" required)
+					label.form__label(for="message") сообщение
+
+				.form__field.form__field_file
+					+icon('file-icon', true).form__label-icon
+					input#file.form__file(type="file", value="" placeholder="ПРИКРЕПИТЬ ФАЙЛ" )
+					//- label#file-label.form__label(for="file") прикрепить файл
+			.form__row.form__row_bottom
+				.form__col
+					a.form__privacy(href="") согласие на обработку данных
+				.form__col
+					input.form__submit.button(type="submit", value="Оставить заявку")
